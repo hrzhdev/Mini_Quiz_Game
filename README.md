@@ -1,6 +1,6 @@
-# C++ project
+# ˗ˏˋ ★ ˎˊ˗ 𝙼𝚒𝚗𝚒 𝚀𝚞𝚒𝚣 𝙶𝚊𝚖𝚎
 
-A ready-to-run project exported from the [Programiz online compiler][programiz] - open it there to run or edit it online.
+Group 10 - ITECC02 FINAL PROJECT
 
 ## What you need
 
