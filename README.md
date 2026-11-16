@@ -3,6 +3,6 @@
 Group 10 - ITECC02 FINAL PROJECT
 
 # Revisions:
-Added multiplayer feature
-Leaderboard
-Minimal improvement on Aesthetics/Designs
+- Added multiplayer feature
+- Leaderboard
+- Minimal improvement on Aesthetics/Designs
