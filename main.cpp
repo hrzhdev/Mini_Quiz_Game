@@ -32,7 +32,7 @@ int main() {
         cout << "┃    2) Duo   ( 2 players )" << endl;
         cout << "┃    3) Trio  ( 3 players )" << endl;
         do {
-            cout << "Your choice: ";
+            cout << "╰┈➤ Your choice: ";
             cin >> playerChoice;
             cin.ignore(1000, '\n');   // throw away the rest of the line
 
@@ -46,10 +46,10 @@ int main() {
         // Ask for each player's name
         cout << "════════════════════════════════════════════════════════════════════════" << endl;
         cout << "⬩➤ ENTER YOUR NAME" << endl;
-        cout << "════════════════════════════════════════════════════════════════════════" << endl;
+        cout << "───────────────────── ⋆ ✧" << endl;
         for (int p = 0; p < numPlayers; p++) {
             do {
-                cout << "⬩➤ Player " << p + 1 << " name: ";
+                cout << "╰┈➤ Player " << p + 1 << " name: ";
                 getline(cin, names[p]);
 
                 if (names[p].find_first_not_of(" \t") == string::npos) {
@@ -72,12 +72,12 @@ int main() {
         // Choose the difficulty
         char choice;
         int difficulty;
-        cout << "=================================" << endl;
-        cout << "      CHOOSE DIFFICULTY" << endl;
-        cout << "=================================" << endl;
-        cout << "1) Easy" << endl;
-        cout << "2) Medium" << endl;
-        cout << "3) Hard" << endl;
+        cout << "⠈⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠂⠁" << endl;
+        cout << "                       CHOOSE DIFFICULTY" << endl;
+        cout << "⠈⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠄⠂⠁⠁⠂⠄⠂⠁" << endl;
+        cout << "1) Easy˚｡⋆" << endl;
+        cout << "2) Medium ⋆✴︎" << endl;
+        cout << "3) Hard ⛧" << endl;
         do {
             cout << "Your choice: ";
             cin >> choice;
@@ -380,7 +380,7 @@ int main() {
             }
 
             // Final result
-            cout << "════════════════════════════════════════════════════════════════════════" << endl;
+            cout << "────────────────────────────────────────────────────────────────﹒★﹒﹒─" << endl;
             cout << "⬩➤ " << names[p] << "'s Final Score: 《 " << score << " 》 out of " << totalQuestions << endl;
 
             if (score == totalQuestions) {
@@ -390,7 +390,7 @@ int main() {
             } else {
                 cout << "(ᵕ— ᴗ —) Keep practicing!" << endl;
             }
-            cout << "════════════════════════════════════════════════════════════════════════" << endl;
+            cout << "─﹒﹒★﹒────────────────────────────────────────────────────────────────" << endl;
 
             scores[p] = score;   // save this player's score for the leaderboard
             cout << endl;
@@ -409,9 +409,9 @@ int main() {
         }
         int highest = scores[standing[0]];
 
-        cout << "════════════════════════════════════════════════════════════════════════" << endl;
-        cout << "              🏆  L E A D E R B O A R D  🏆" << endl;
-        cout << "════════════════════════════════════════════════════════════════════════" << endl;
+        cout << "╔═════════════════════════ ≪ ✦⋆⋅☆⋅⋆☆⋆⋅☆⋅⋆✦ ≫ ═════════════════════════╗" << endl;
+        cout << "                   🏆  L E A D E R B O A R D  🏆" << endl;
+        cout << "╚═════════════════════════ ≪ ✦⋆⋅☆⋅⋆☆⋆⋅☆⋅⋆✦ ≫ ═════════════════════════╝" << endl;
 
         int place = 1;
         for (int r = 0; r < numPlayers; r++) {
@@ -445,15 +445,14 @@ int main() {
             }
             cout << "════════════════════════════════════════════════════════════════════════" << endl;
         }
-
         cout << "Play again? (y/n): ";
         cin >> playAgain;
         cout << endl;
+        
 
     } while (playAgain == 'y' || playAgain == 'Y');
-
-    cout << "Thanks for playing! ˖ ࣪‧₊˚⋆✩٩(ˊᗜˋ*)و ✩\n 『 GROUP 10 』" << endl;
+        
+    cout << "\nThanks for playing! ˖ ࣪‧₊˚⋆✩٩(ˊᗜˋ*)و ✩\n\n『 GROUP 10 』" << endl;
     return 0;
-}
 
-
+        }
